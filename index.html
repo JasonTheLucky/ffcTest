@@ -4,6 +4,18 @@
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
+  <script>const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+if (prefersDarkScheme.matches) {
+  document.body.classList.add("dark-theme");
+} else {
+  document.body.classList.remove("dark-theme");
+}</script>
+<style>
+body.dark-theme h1,
+body.dark-theme p {
+  color: blue;
+}</style>
     <body>
         <h1>Automated Testing Guild</h1>
 	  <button id="myCustomTrigger">Create Issue</button>
