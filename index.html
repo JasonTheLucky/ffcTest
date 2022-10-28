@@ -1,0 +1,21 @@
+<html>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+    <body>
+        <h1>Automated Testing Guild</h1>
+	  <button id="myCustomTrigger">Create Issue</button>
+       <script type="text/javascript" src="https://prinsens.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/1jmxwi/b/8/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=429a30e5"></script>
+
+    <script type="text/javascript">window.ATL_JQ_PAGE_PROPS =  {
+	"triggerFunction": function(showCollectorDialog) {
+		//Requires that jQuery is available! 
+		jQuery("#myCustomTrigger").click(function(e) {
+			e.preventDefault();
+			showCollectorDialog();
+		});
+	}};</script>
+
+    </body>
+</html>
